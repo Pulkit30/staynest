@@ -34,7 +34,6 @@ function ListingContext({ children }) {
         formData,
         { credentials: true },
       );
-      console.log(result);
     } catch (error) {
       console.log(error);
     }

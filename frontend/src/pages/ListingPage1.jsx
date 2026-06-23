@@ -7,7 +7,7 @@ function ListingPage1() {
     <div className="w-[100%] h-[100vh] bg-white flex items-center justify-center relative overflow-auto">
       <form
         action=""
-        className="max-w-[900px] w-[90%] h-[600px] flex flex-col items-center justify-center  md:items-start gap-[10px] overflow-auto mt-[150px]"
+        className="max-w-[900px] w-[90%] h-[550px] flex flex-col items-center justify-start  md:items-start gap-[10px] overflow-auto mt-[30px]"
       >
         <div
           className="w-[50px] h-[50px] bg-[red] cursor-pointer absolute top-[10%] left-[20px] rounded-[50%] flex items-center justify-center"
@@ -17,7 +17,7 @@ function ListingPage1() {
         </div>
         <div
           className="w-[200px] h-[50px] text-[20px] bg-[#f14242] text-[white] flex items-center justify-center
-        rounded-[30px] absolute top-[5%] right-[10px] shadow-lg"
+        rounded-[30px] absolute top-[10%] right-[10px] shadow-lg"
         >
           SetUp Your Home
         </div>
@@ -83,6 +83,45 @@ function ListingPage1() {
             />
           </div>
         </div>
+
+        <div className="w-[90%] flex items-start justify-start flex-col gap-[10px] ">
+          <label htmlFor="rent" className="text-[20px]">
+            Rent
+          </label>
+          <input
+            type="text"
+            id="rent"
+            className="w-[90%] h-[40px] border-[2px] border-[#555656] rounded-lg text-[18px] px-[20px]"
+            required
+          />
+        </div>
+
+        <div className="w-[90%] flex items-start justify-start flex-col gap-[10px] ">
+          <label htmlFor="city" className="text-[20px]">
+            City
+          </label>
+          <input
+            type="text"
+            id="city"
+            className="w-[90%] h-[40px] border-[2px] border-[#555656] rounded-lg text-[18px] px-[20px]"
+            required
+          />
+        </div>
+
+        <div className="w-[90%] flex items-start justify-start flex-col gap-[10px] ">
+          <label htmlFor="landmark" className="text-[20px]">
+            Landmark
+          </label>
+          <input
+            type="text"
+            id="landmark"
+            className="w-[90%] h-[40px] border-[2px] border-[#555656] rounded-lg text-[18px] px-[20px]"
+            required
+          />
+        </div>
+        <button className="px-[50px] py-[10px] bg-[red] text-[white] text-[18px] md:px-[100px] rounded-lg">
+          Next
+        </button>
       </form>
     </div>
   );
